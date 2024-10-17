@@ -26,7 +26,7 @@ function App() {
     try {
       await axios.post('http://localhost:5000/products', formData);
       setFormData({ name: '', description: '', price: '', category: '' });
-      window.location.reload(); // Reload to fetch updated products
+      window.location.reload(); 
     } catch (error) {
       console.error('Error adding product:', error);
     }
